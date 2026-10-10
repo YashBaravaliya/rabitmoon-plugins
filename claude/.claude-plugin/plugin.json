@@ -8,6 +8,7 @@
     "url": "https://rabitmoon.com"
   },
   "homepage": "https://rabitmoon.com",
+  "repository": "https://github.com/YashBaravaliya/rabitmoon-plugins",
   "keywords": [
     "productivity",
     "infographics",
@@ -18,6 +19,7 @@
   ],
   "displayName": "rabitmoon infography",
   "icon": "./assets/rabitmoon.png",
+  "documentationUrl": "https://github.com/YashBaravaliya/rabitmoon-plugins/tree/main/claude",
   "supportUrl": "https://rabitmoon.com/contact/",
   "privacyPolicyUrl": "https://rabitmoon.com/privacy/",
   "termsOfServiceUrl": "https://rabitmoon.com/terms/",
