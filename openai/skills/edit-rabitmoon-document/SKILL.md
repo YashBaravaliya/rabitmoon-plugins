@@ -14,6 +14,11 @@ read, a new idempotency_key, and only the pages the user asked to change. Preser
 the document size, identity, page order and unrequested pages. Put exact changed
 facts in raw_data and visual directions in instructions. Use low reasoning for
 clear changes, or none for a simple fully specified edit.
+When the user requests a visual improvement, use plan-rabitmoon-visuals to choose
+appropriate charts, icons, Mermaid or custom SVG. Describe the changed visual's
+purpose, placement and styling in page instructions while preserving supplied
+facts and the existing theme. A factual correction alone does not authorize
+redesigning unrelated visuals or adding image generation.
 
 A revision conflict requires a fresh read and reconciliation with the user's
 intent before resubmitting; do not overwrite concurrent edits blindly. A retry of

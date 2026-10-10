@@ -19,6 +19,13 @@ contains exact source content in raw_data and composition directions in
 instructions. Include title, diagram and image only where useful and requested.
 Do not invent unsupported fields such as per-page size or a top-level theme.
 Keep themes in request.instructions. The server produces the canvas JSON.
+For visual documents, actively choose suitable icons, charts, Mermaid diagrams
+or custom SVG illustrations using the plan-rabitmoon-visuals skill. Give each
+useful visual a purpose, placement, relative size, labels and palette in the
+page's instructions. A custom SVG illustration does not require an image brief;
+leave image unset unless raster image generation is intended. Prefer native
+editable text and charts, with SVG for bespoke artwork, rather than a full-page
+SVG containing all content. Respect text-only or minimal-design requests.
 See [the five-page example](references/five-page-request.json) for the exact
 shape; replace illustrative values with the user's evidence.
 
