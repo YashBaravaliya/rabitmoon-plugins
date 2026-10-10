@@ -1,0 +1,93 @@
+{
+  "request": {
+    "idempotency_key": "example-only-replace-with-a-new-uuid",
+    "aspect_ratio": "4:5",
+    "reasoning_effort": "low",
+    "instructions": "Illustrative clean-energy briefing, not real investment data. Use rabitmoon dark, orange primary and teal secondary. One focal visual per page, readable labels, generous margins and morph transitions. No generated images.",
+    "pages": [
+      {
+        "page_number": 1,
+        "title": "How a solar system works",
+        "raw_data": {
+          "message": "Panels convert sunlight to electricity; an inverter supplies usable AC power."
+        },
+        "instructions": "Headline at top; large lucide:sun and three labelled native shapes for panel, inverter and home; takeaway at bottom."
+      },
+      {
+        "page_number": 2,
+        "title": "From sunlight to a home",
+        "raw_data": {
+          "steps": [
+            "Sunlight",
+            "Solar panels",
+            "Inverter",
+            "Home"
+          ]
+        },
+        "diagram": "Mermaid flowchart TB. Rounded terminal for sunlight, rectangles for panel and inverter, rounded home terminal. Directed labelled arrows; one clear vertical chain.",
+        "instructions": "Diagram occupies the middle two thirds; keep all labels readable on portrait canvas."
+      },
+      {
+        "page_number": 3,
+        "title": "Illustrative output by quarter",
+        "raw_data": {
+          "illustrative": true,
+          "categories": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "unit": "kWh",
+          "series": [
+            {
+              "name": "Solar output",
+              "values": [
+                800,
+                1200,
+                1400,
+                900
+              ]
+            }
+          ]
+        },
+        "instructions": "One orange bar chart, zero baseline, direct value labels, kWh axis. Clearly label the data as illustrative."
+      },
+      {
+        "page_number": 4,
+        "title": "Where each component fits",
+        "raw_data": {
+          "columns": [
+            "Component",
+            "Purpose"
+          ],
+          "rows": [
+            [
+              "Panel",
+              "Converts sunlight"
+            ],
+            [
+              "Inverter",
+              "Converts DC to AC"
+            ],
+            [
+              "Battery (optional)",
+              "Stores energy"
+            ]
+          ]
+        },
+        "instructions": "A three-row table plus simple Iconify symbols; do not invent specifications or costs."
+      },
+      {
+        "page_number": 5,
+        "title": "Three things to remember",
+        "raw_data": [
+          "Sunlight is the input.",
+          "An inverter converts DC to usable AC.",
+          "Storage is optional and depends on the system."
+        ],
+        "instructions": "Three short numbered statements with one small custom SVG sun accent. Keep the closing page visually calm."
+      }
+    ]
+  }
+}

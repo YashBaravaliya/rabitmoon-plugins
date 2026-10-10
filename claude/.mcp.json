@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rabitmoon": {
+      "type": "http",
+      "url": "https://api.rabitmoon.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "rabitmoon-infography",
+  "version": "1.1.0",
+  "description": "Create and edit private, editable infographics, presentations, diagrams and reports from page-by-page briefs using your rabitmoon account.",
+  "author": {
+    "name": "rabitmoon",
+    "email": "hello@rabitmoon.com",
+    "url": "https://rabitmoon.com"
+  },
+  "homepage": "https://rabitmoon.com",
+  "keywords": [
+    "productivity",
+    "infographics",
+    "presentations",
+    "diagrams",
+    "charts",
+    "visual-storytelling"
+  ],
+  "displayName": "rabitmoon infography",
+  "icon": "./assets/rabitmoon.png",
+  "supportUrl": "https://rabitmoon.com/contact/",
+  "privacyPolicyUrl": "https://rabitmoon.com/privacy/",
+  "termsOfServiceUrl": "https://rabitmoon.com/terms/",
+  "metadata": {
+    "category": "productivity",
+    "categoryNote": "Confirm the portal category on submission"
+  },
+  "mcpServers": "./.mcp.json"
+}

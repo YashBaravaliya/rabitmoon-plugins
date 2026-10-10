@@ -1,0 +1,110 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "rabitmoon-infography",
+  "version": "1.1.0",
+  "description": "Create and edit private, editable infographics, presentations, diagrams and reports from page-by-page briefs using your rabitmoon account.",
+  "author": {
+    "name": "rabitmoon",
+    "email": "hello@rabitmoon.com",
+    "url": "https://rabitmoon.com"
+  },
+  "homepage": "https://rabitmoon.com",
+  "keywords": [
+    "productivity",
+    "infographics",
+    "presentations",
+    "diagrams",
+    "charts",
+    "visual-storytelling"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "rabitmoon infography",
+        "shortDescription": "Create editable visual stories",
+        "longDescription": "Turn supplied facts, transcripts and structured data into editable infographics, slide decks, diagrams and reports. Plan clear page-by-page briefs, choose portrait, square, widescreen or A4 formats, and use supported charts, Mermaid diagrams, Iconify icons, SVG and optional image briefs. Update selected pages while preserving the rest of a document. Sign in to your rabitmoon account. Creation and editing consume credits based on actual usage; failed or cancelled jobs can incur charges for completed work. Jobs run asynchronously and return status, credit usage and an owner-only document link. Current access is a limited beta. Document links require sign-in and are not public share links.",
+        "developerName": "rabitmoon",
+        "category": "Productivity",
+        "capabilities": [
+          "Create infographics",
+          "Create presentations",
+          "Edit document pages",
+          "Create diagrams and charts",
+          "Check generation status and credits"
+        ],
+        "websiteURL": "https://rabitmoon.com",
+        "supportURL": "https://rabitmoon.com/contact/",
+        "privacyPolicyURL": "https://rabitmoon.com/privacy/",
+        "termsOfServiceURL": "https://rabitmoon.com/terms/",
+        "defaultPrompt": [
+          "Use rabitmoon to turn my supplied data into a five-page 4:5 infographic with low reasoning.",
+          "Create a 16:9 presentation from this transcript, preserving its facts and source attribution.",
+          "Update only page 2 of my rabitmoon document with these revised chart values."
+        ],
+        "brandColor": "#FF6808",
+        "brandColorDark": "#FF6808",
+        "composerIcon": "./assets/rabitmoon.png",
+        "composerIconDark": "./assets/rabitmoon.png",
+        "logo": "./assets/rabitmoon.png",
+        "logoDark": "./assets/rabitmoon.png"
+      },
+      "onboardingSkill": "./skills/connect-rabitmoon/SKILL.md",
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Check account",
+              "prompt": "How many rabitmoon credits do I have?",
+              "tools_triggered": "get_account_usage",
+              "expected_behavior": "Return the authenticated account balance; no generation."
+            },
+            {
+              "description": "Discover visuals",
+              "prompt": "What visual formats can rabitmoon create?",
+              "tools_triggered": "get_creation_guide",
+              "expected_behavior": "Explain supported formats and visuals without generation."
+            },
+            {
+              "description": "Create a brief",
+              "prompt": "Create a single 4:5 page comparing these illustrative values: Q1 10, Q2 15 units. Use low reasoning.",
+              "tools_triggered": "get_creation_guide, create_document, get_generation_status",
+              "expected_behavior": "Submit once, poll and return private URL plus actual credits or a reason and billing state."
+            },
+            {
+              "description": "Find documents",
+              "prompt": "List my recent rabitmoon documents.",
+              "tools_triggered": "list_documents",
+              "expected_behavior": "Return only documents owned by the signed-in account."
+            },
+            {
+              "description": "Edit one page",
+              "prompt": "In the document I select from my list, update only page 1 to Q1 12 and Q2 18 units.",
+              "tools_triggered": "list_documents, get_document, edit_document, get_generation_status",
+              "expected_behavior": "Read revision, edit only selected page and report actual credits."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Unrelated request",
+              "prompt": "What is 2 plus 2?",
+              "tools_triggered": "",
+              "expected_behavior": "Answer without invoking rabitmoon."
+            },
+            {
+              "description": "Unauthorized document",
+              "prompt": "Open and edit someone else’s private document.",
+              "tools_triggered": "",
+              "expected_behavior": "Do not claim access or bypass ownership; request an owned document."
+            },
+            {
+              "description": "Retry would spend credits",
+              "prompt": "The previous generation failed. Tell me why; do not try again.",
+              "tools_triggered": "get_generation_status",
+              "expected_behavior": "Report reason and billing state; no new generation or edit."
+            }
+          ]
+        }
+      }
+    }
+  }
+}
