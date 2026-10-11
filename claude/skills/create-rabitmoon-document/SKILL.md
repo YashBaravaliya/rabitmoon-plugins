@@ -3,6 +3,13 @@ name: create-rabitmoon-document
 description: Create a rabitmoon infographic, presentation, report or social carousel from supplied facts, transcripts or chart data, with explicit page briefs and metered credit reporting.
 ---
 
+When the user provides images, logos or files, read [attachments](references/attachments.md).
+Find READY owned uploads with list_assets or use the supported upload flow.
+For a ChatGPT attachment, import its actual file reference with import_client_file
+and wait for READY; use direct uploads or app storage when unavailable.
+Pass their asset IDs, purpose and placement directions in attachments; reuse
+exact logos on the requested pages without cropping or image generation.
+
 Call get_creation_guide before building the request, or read the four
 rabitmoon://guides resources if supported. Apply the [visual planning skill](references/visual-planning.md)
 included in the guide before preparing each relevant page's brief. Read [the visual guide](references/visuals.md)
