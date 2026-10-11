@@ -17,7 +17,7 @@ For comparisons use bars; for time series use lines; for exact values use a
 compact table; for a main metric use a labelled number with context. Use honest
 axes and consistent units. Avoid misleading 3D charts, decorative data marks,
 and color-only distinctions. Provide clear labels and readable contrast.
-Use diagrams only when requested: choose flow for steps, lanes for actors,
+For a visual document choose diagrams when useful: flow for steps, lanes for actors,
 or a labelled architecture for components. Show connector direction and keep
 crossings minimal. Do not turn ordinary facts into an invented process.
 Use images only when requested and useful to the message. Describe subject,

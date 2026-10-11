@@ -4,7 +4,8 @@ description: Create a rabitmoon infographic, presentation, report or social caro
 ---
 
 Call get_creation_guide before building the request, or read the four
-rabitmoon://guides resources if supported. Read [the visual guide](references/visuals.md)
+rabitmoon://guides resources if supported. Apply the [visual planning skill](references/visual-planning.md)
+included in the guide before preparing each relevant page's brief. Read [the visual guide](references/visuals.md)
 when selecting diagrams, charts, icons, SVG, page sizes or images; read
 [the design guide](references/design.md) for layout and brand choices.
 

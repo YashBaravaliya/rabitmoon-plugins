@@ -9,7 +9,8 @@ ownership from a URL or use another account. get_document returns metadata; it
 does not imply that you have read all page content. Request missing source content
 when the requested change depends on it.
 
-Read get_creation_guide. Submit edit_document with base_revision from the latest
+Read get_creation_guide and apply its visual planning skill to the requested
+visual changes before preparing the request. Submit edit_document with base_revision from the latest
 read, a new idempotency_key, and only the pages the user asked to change. Preserve
 the document size, identity, page order and unrequested pages. Put exact changed
 facts in raw_data and visual directions in instructions. Use low reasoning for
