@@ -3,6 +3,12 @@ name: create-rabitmoon-document
 description: Create a rabitmoon infographic, presentation, report or social carousel from supplied facts, transcripts or chart data, with explicit page briefs and metered credit reporting.
 ---
 
+For source code, JSON or configuration on the canvas, read [code blocks](references/code-blocks.md)
+and the [code request example](references/code-request.json). Request native editable
+code blocks with literal source in raw_data and layout directions in instructions;
+keep diagram/image unset unless those separate visuals are also needed.
+
+
 When the user provides images, logos or files, read [attachments](references/attachments.md).
 Find READY owned uploads with list_assets or use the supported upload flow.
 For a ChatGPT attachment, import its actual file reference with import_client_file

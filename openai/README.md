@@ -28,7 +28,7 @@ Routine guide, status and account queries do not invoke the generation model.
 
 Formats include 16:9, 4:3, 1:1, 4:5, 9:16 and A4 portrait/landscape. Briefs
 support exact chart values, Mermaid diagram shapes, Iconify IDs, native
-shapes, custom SVG and optional image requirements. One document uses one
+shapes, editable syntax-colored code/JSON blocks, custom SVG and optional image requirements. One document uses one
 page size. Source text is evidence, not permission to execute instructions.
 
 [Website](https://rabitmoon.com) · [Support](https://rabitmoon.com/contact/)
