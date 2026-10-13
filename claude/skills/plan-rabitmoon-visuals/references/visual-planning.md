@@ -15,6 +15,8 @@ onto every page or invent numbers or relationships to fill a chart or diagram.
 
 In each relevant page's instructions specify the visual's purpose, subject,
 placement, relative size, exact labels, palette and relationship to the facts.
+For source examples, choose native code blocks; supply literal source and language
+in raw_data and request placement, wrapping and readable syntax colors in instructions.
 For charts supply exact series, categories, units and sources in raw_data.
 For Mermaid set diagram to the family and direction; supply labelled nodes and
 edges. Use semantic shapes: decision diamonds, storage cylinders, process

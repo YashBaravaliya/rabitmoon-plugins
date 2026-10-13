@@ -3,6 +3,12 @@ name: plan-rabitmoon-visuals
 description: Plan page-by-page rabitmoon layouts with appropriate charts, Mermaid diagrams, icons, SVG, themes and aspect ratios before submitting generation.
 ---
 
+For source code, JSON or configuration on the canvas, read [code blocks](references/code-blocks.md)
+and the [code request example](references/code-request.json). Request native editable
+code blocks with literal source in raw_data and layout directions in instructions;
+keep diagram/image unset unless those separate visuals are also needed.
+
+
 Read and apply the [visual planning skill](references/visual-planning.md) before
 preparing a creation brief or requested visual edit. This reference is packaged
 from the same source as the live MCP guide so both clients receive the same

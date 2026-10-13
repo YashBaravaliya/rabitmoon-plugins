@@ -3,6 +3,12 @@ name: edit-rabitmoon-document
 description: Update selected pages in an existing rabitmoon document using its current revision, preserving other pages and reporting job status and credits.
 ---
 
+For source code, JSON or configuration on the canvas, read [code blocks](references/code-blocks.md)
+and the [code request example](references/code-request.json). Request native editable
+code blocks with literal source in raw_data and layout directions in instructions;
+keep diagram/image unset unless those separate visuals are also needed.
+
+
 Use list_documents to help locate the user's document when needed, then
 get_document with include_content=true and selected page_numbers to obtain the
 actual document_id, revision and page content. Do not infer document ownership
