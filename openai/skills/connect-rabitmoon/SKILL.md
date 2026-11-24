@@ -3,11 +3,17 @@ name: connect-rabitmoon
 description: Connect an AI client to rabitmoon infography, check account access and credits, and explain the private-document generation workflow.
 ---
 
-Use the client's OAuth connection for the rabitmoon server at
-https://api.rabitmoon.com/mcp. Let the user sign in through its browser flow;
-never collect passwords, authorization codes, tokens or provider API keys in chat.
-Installation does not bypass beta eligibility. If OAuth fails, report the actual
-error and ask the user to reconnect; do not substitute another person's account.
+1. In rabitmoon Account → MCP connections, select the user's AI client. Add the
+   remote Streamable HTTP server at https://api.rabitmoon.com/mcp using OAuth
+   discovery and automatic client registration. For ChatGPT, install the remote
+   server connection in the intended workspace.
+2. Start the client's sign-in action. The user chooses the rabitmoon account
+   and approves access in the browser. Keep passwords, authorization codes,
+   tokens and provider API keys out of chat. Use an active rabitmoon account.
+3. If sign-in fails, check whether the client supports CIMD or DCR, the
+   callback differs from its registration, or the account lacks access. For a
+   callback mismatch, share only the client name and callback host, port and
+   path with support. Exclude query parameters and fragments.
 
 After connection, call get_account_usage and get_creation_guide. This verifies
 access without starting generation. Explain the available balance, private owner

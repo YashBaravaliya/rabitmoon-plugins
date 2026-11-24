@@ -3,6 +3,18 @@ name: edit-rabitmoon-document
 description: Update selected pages in an existing rabitmoon document using its current revision, preserving other pages and reporting job status and credits.
 ---
 
+For topic-specific illustrations, cutaways or visual metaphors, apply the
+[custom SVG planning guidance](references/visual-planning.md) and adapt the
+[SVG request example](references/svg-request.json). Choose original SVG proactively
+when useful; do not require the user to name SVG or exhaust stock libraries.
+Carry the artwork-only SVG requirement into the page instructions: all visible
+labels, numbers and explanations remain separate native editable text, with
+space for wrapped headings and clear callouts. Match the selected style; vary
+subjects by meaning, without an SVG quota. Keep structured diagrams in Mermaid,
+respect text-only requests and preserve unrelated content during edits. A custom
+SVG illustration does not require image or diagram fields. Reading this guidance
+does not authorize a paid generation or an automatic retry.
+
 For source code, JSON or configuration on the canvas, read [code blocks](references/code-blocks.md)
 and the [code request example](references/code-request.json). Request native editable
 code blocks with literal source in raw_data and layout directions in instructions;
@@ -14,6 +26,14 @@ get_document with include_content=true and selected page_numbers to obtain the
 actual document_id, revision and page content. Do not infer document ownership
 from a URL or use another account. Read those pages before deciding changes;
 request missing facts only when the saved content cannot answer them.
+
+Read the actual visual metadata before restyling shapes, Coolshapes, patterns or
+icons. Preserve their native element type, shapeId, palettePreset, custom colors,
+noise settings, patternRecipe, iconName/iconWeight/iconColor and SVG markup unless
+the requested change affects them. Existing artwork may use a category excluded
+from new AI suggestions; preserve it rather than substituting a different shape.
+Use the live visual guide for library capabilities and never render internal
+clipboard/document JSON as visible text in place of the visual.
 
 Read get_creation_guide and apply its visual planning skill to the requested
 visual changes before preparing the request. Submit edit_document with base_revision from the latest
@@ -37,7 +57,10 @@ redesigning unrelated visuals or adding image generation.
 A revision conflict requires a fresh read and reconciliation with the user's
 intent before resubmitting; do not overwrite concurrent edits blindly. A retry of
 the same accepted payload keeps the same idempotency key. Poll the existing job
-at poll_after_seconds instead of starting another edit.
+at poll_after_seconds instead of starting another edit. Return status_url
+immediately as "Open in editor": it opens the existing document with progress
+and live updates. The owner may leave and reopen it; closing the browser does
+not cancel the job. Editing resumes after the saved revision is loaded.
 
 Return the owner-only URL and actual credits on completion. For failed/cancelled
 work, report the reason, credit status and any draft URL. Pending billing is not

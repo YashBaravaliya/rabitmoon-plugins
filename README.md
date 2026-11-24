@@ -2,7 +2,7 @@
 
 Category: **Productivity**. Official packages maintained by rabitmoon for creating editable infographics, presentations, diagrams, charts and reports.
 
-These packages are **beta submission drafts**. They are not yet approved or publicly listed by OpenAI or Anthropic. Service access currently requires an approved rabitmoon beta account. Installing a package does not grant access.
+Direct MCP access is open to eligible rabitmoon accounts. Add the server URL to your client, then sign in to rabitmoon in your browser. Directory publication requires approval from OpenAI and Anthropic.
 
 - `openai/`: portable Agent Plugins package for OpenAI directory upload.
 - `claude/`: Claude plugin bundle with skills and remote MCP configuration.

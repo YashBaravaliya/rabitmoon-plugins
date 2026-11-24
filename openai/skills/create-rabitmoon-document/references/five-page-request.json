@@ -11,7 +11,7 @@
         "raw_data": {
           "message": "Panels convert sunlight to electricity; an inverter supplies usable AC power."
         },
-        "instructions": "Headline at top; large lucide:sun and three labelled native shapes for panel, inverter and home; takeaway at bottom."
+        "instructions": "Headline at top; original custom SVG solar-panel cutaway with sunlight reaching its layers. Keep all supplied labels and the takeaway in separate native editable text, with roomy annotation lanes. No visible text inside SVG."
       },
       {
         "page_number": 2,
@@ -86,7 +86,7 @@
           "An inverter converts DC to usable AC.",
           "Storage is optional and depends on the system."
         ],
-        "instructions": "Three short numbered statements with one small custom SVG sun accent. Keep the closing page visually calm."
+        "instructions": "Three short numbered statements with one small lucide:sun Iconify accent. Keep the closing page visually calm."
       }
     ]
   }

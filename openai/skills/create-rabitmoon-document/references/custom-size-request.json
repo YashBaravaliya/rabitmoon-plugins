@@ -1,0 +1,22 @@
+{
+  "request": {
+    "idempotency_key": "replace-with-unique-custom-size-id",
+    "creation_settings": {
+      "canvas_size": {
+        "width": 1050,
+        "height": 600
+      }
+    },
+    "pages": [
+      {
+        "page_number": 1,
+        "title": "Studio contact card",
+        "raw_data": {
+          "name": "Example Studio",
+          "email": "hello@example.com"
+        },
+        "instructions": "Keep both lines editable and leave a margin around the card."
+      }
+    ]
+  }
+}

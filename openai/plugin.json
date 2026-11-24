@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "rabitmoon-infography",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "Create and edit private, editable infographics, presentations, diagrams and reports from page-by-page briefs using your rabitmoon account.",
   "author": {
     "name": "rabitmoon",
@@ -23,7 +23,7 @@
       "interface": {
         "displayName": "rabitmoon infography",
         "shortDescription": "Create editable visual stories",
-        "longDescription": "Turn supplied facts, transcripts and structured data into editable infographics, slide decks, diagrams and reports. Plan clear page-by-page briefs, choose portrait, square, widescreen or A4 formats, and use supported charts, Mermaid diagrams, Iconify icons, SVG and optional image briefs. Update selected pages while preserving the rest of a document. Sign in to your rabitmoon account. Creation and editing consume credits based on actual usage; failed or cancelled jobs can incur charges for completed work. Jobs run asynchronously and return status, credit usage and an owner-only document link. Current access is a limited beta. Document links require sign-in and are not public share links.",
+        "longDescription": "Turn supplied facts, transcripts and structured data into editable infographics, slide decks, diagrams and reports. Plan clear page-by-page briefs, choose portrait, square, widescreen, A4 or custom canvas dimensions, and use supported charts, Mermaid diagrams, Iconify icons, SVG and optional image briefs. Update selected pages while preserving the rest of a document. Sign in to your rabitmoon account in the browser. Creation and editing consume credits based on actual usage. Failed or cancelled jobs can incur charges for completed work. Jobs run asynchronously and return status, credit usage and a private document link for the owner.",
         "developerName": "rabitmoon",
         "category": "Productivity",
         "capabilities": [

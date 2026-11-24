@@ -3,7 +3,25 @@
   "mcpServers": {
     "rabitmoon": {
       "type": "streamable-http",
-      "url": "https://api.rabitmoon.com/mcp"
+      "url": "https://api.rabitmoon.com/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "cimd"
+            },
+            "baseScopes": [
+              "openid",
+              "email",
+              "https://api.rabitmoon.com/mcp/read"
+            ],
+            "defaultScopes": [
+              "https://api.rabitmoon.com/mcp/generate"
+            ]
+          }
+        }
+      }
     }
   }
 }

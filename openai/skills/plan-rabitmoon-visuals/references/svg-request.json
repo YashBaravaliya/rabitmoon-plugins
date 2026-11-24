@@ -1,0 +1,33 @@
+{
+  "request": {
+    "idempotency_key": "replace-with-unique-svg-example-id",
+    "aspect_ratio": "16:9",
+    "reasoning_effort": "medium",
+    "creation_settings": {
+      "design_guide": {
+        "direction": "handwritten",
+        "imagery": "none"
+      }
+    },
+    "instructions": "One illustrated educational page. Warm cream, forest green and burnt orange. No raster images or invented measurements.",
+    "pages": [
+      {
+        "page_number": 1,
+        "title": "Healthy soil holds water for roots",
+        "raw_data": {
+          "labels": [
+            "Roots",
+            "Organic matter",
+            "Water in soil pores"
+          ],
+          "facts": [
+            "Roots absorb water from soil.",
+            "Organic matter helps soil retain moisture.",
+            "Water is held in spaces between soil particles."
+          ]
+        },
+        "instructions": "Create an original custom SVG plant-and-soil cutaway as the central focal illustration. Show the plant above ground, connected roots below, organic matter and water spaces. Use hand-drawn strokes and distinct meaningful shapes. SVG artwork only: no visible <text> nodes. Place the supplied labels and facts as separate native editable text in reserved side lanes; use short callouts only where endpoints clarify a part. Reserve height for wrapped headings and explanations. Use safe self-contained markup with viewBox and element-prefixed IDs. Preserve the exact supplied facts."
+      }
+    ]
+  }
+}
